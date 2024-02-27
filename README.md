@@ -1,10 +1,10 @@
 # Reto uno
 
-## Punto uno
+## PPunto uno
 
 **Instrucción**
 
-Cree una función que realice operaciones básicas (suma, resta, multiplicación, división) entre dos números, según la elección del usuario, la forma de entrada de la función serán los dos operandos y el carácter usado para la operación.
+Cree una función que realice operaciones básicas (suma, resta, multiplicación, división) entre dos números, según la elección del usuario, la forma de entrada de la función serán los dos operandos y el carácter usado para la operación. 
 
 **Código**
 ```
@@ -86,7 +86,7 @@ En esta ocasión para recorrer la palabra sin hacer slicing, la solución es rec
 4. Se verifica que los carácteres coincidan, y se hace la confirmación mediante un **True** o un **False** dependiendo si la palabra es palíndromo o no.
 5. Se imprime la solución.
 
-## Punto tres
+## PPunto tres
 
 **Instrucción**
 
@@ -94,13 +94,33 @@ Escribir una función que reciba una lista de números y devuelva solo aquellos 
 
 **Código**
 ```
-abc
+def primo(numero):
+    if numero < 2:
+        return False
+    for i in range(2, int(numero ** 0.5) + 1):
+        if numero % i == 0:
+            return False
+    return True
+
+def obtener_primos(lista):
+    primos = [num for num in lista if primo(num)]
+    return primos
+
+lista_usuario = input("Ingrese una lista de numeros separados por espacios: ")
+numeros = [int(num) for num in lista_usuario.split()]
+
+resultado = obtener_primos(numeros)
+print("Numeros primos: ", resultado)
 ```
 **Explicación**
 
-1. 
+1. Se define la función "primo" y mediante el condicional **if** retorna valores de **True** o **False** dependiendo de si el número ingresado es primo o no.
+2. Se define una segunda función, "obtener_primo", la cual parte de una lista inical y devuelve una segunda lista con solo núeros primos, basandose en la lista original devuelve aquellos valores para los que la función fue **True**.
+3. Se pide la entrada del usuario
+4. Mediante la función *split* divide la cadena que inbgresó el usuario y los devuelve como números enteros.
+5. Imprime el resultado.
 
-## Punto cuatro
+## PPunto cuatro
 
 **Instrucción**
 
@@ -134,7 +154,7 @@ print("La mayor suma consecutiva es: ", resultado)
 5. Se pide la entrada del usuario, y a la lista que se ingresa se divide y se devuelven carácteres enteros mediante la función *split*.
 6. Se imprime el reesultado.
 
-## Punto cinco
+## PPunto cinco
 
 **Instrucción**
 
