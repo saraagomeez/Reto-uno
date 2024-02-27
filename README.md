@@ -1,6 +1,6 @@
 # Reto uno
 
-##  Punto uno
+## Punto uno
 
 **Instrucción**
 
@@ -45,3 +45,14 @@ if __name__ == "__main__":
 5. Se realiza un llamado de la función principal.
 6. Se solicita la entrada del usuario.
 7. Se realiza y se imprime el resultado de la operación.
+
+## Punto dos
+
+**Instrucción**
+
+Realice una función que permita validar si una palabra es un palíndromo. Condición: No se vale hacer slicing para invertir la palabra y verificar que sea igual a la original.
+
+**Código**
+```
+abc
+```
