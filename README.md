@@ -54,5 +54,45 @@ Realice una función que permita validar si una palabra es un palíndromo. Condi
 
 **Código**
 ```
+def palindromo(palabra):
+    longitud = len(palabra)
+    inicio = 0
+    fin = longitud - 1
+
+    while inicio < fin:
+        if palabra[inicio] != palabra[fin]:
+            return False
+        inicio += 1
+        fin -= 1
+    return True
+
+#Requerir entrada del usuario.
+palabra_usuario = input("Ingrese una palabra o una frase sin espacios en minúsculas: ")
+
+resultado = palindromo(palabra_usuario)
+
+#Definir si es palíndromo o no.
+if palindromo(palabra_usuario):
+    print(palabra_usuario, "si es un palindromo.")
+else:
+    print(palabra_usuario, "no es un palindromo.")
+```
+**Explicación**
+
+En esta ocasión para recorrer la palabra sin hacer slicing, la solución es recorrer la palabra desde ambos extremos al mismo tiempo.
+1. Se obtiene la longitud de la palabra.
+2. Se inician los indices al inicio y al final de la palabra respectivamente.
+3. Se utiliza el bucle **while** para asegurarnos que se está comparando carácteres opuestos hasta llegar a la mitad de la palabra.
+4. Se verifica que los carácteres coincidan, y se hace la confirmación mediante un **True** o un **False** dependiendo si la palabra es palíndromo o no.
+5. Se imprime la solución.
+
+## Punto tres
+
+**Instrucción**
+
+Escribir una función que reciba una lista de números y devuelva solo aquellos que son primos. La función debe recibir una lista de enteros y retornar solo aquellos que sean primos.
+
+**Código**
+```
 abc
 ```
