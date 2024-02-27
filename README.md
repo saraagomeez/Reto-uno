@@ -1,6 +1,6 @@
 # Reto uno
 
-## PPunto uno
+## Punto uno
 
 **Instrucción**
 
@@ -86,7 +86,7 @@ En esta ocasión para recorrer la palabra sin hacer slicing, la solución es rec
 4. Se verifica que los carácteres coincidan, y se hace la confirmación mediante un **True** o un **False** dependiendo si la palabra es palíndromo o no.
 5. Se imprime la solución.
 
-## PPunto tres
+## Punto tres
 
 **Instrucción**
 
@@ -120,7 +120,7 @@ print("Numeros primos: ", resultado)
 4. Mediante la función *split* divide la cadena que inbgresó el usuario y los devuelve como números enteros.
 5. Imprime el resultado.
 
-## PPunto cuatro
+## Punto cuatro
 
 **Instrucción**
 
@@ -154,7 +154,7 @@ print("La mayor suma consecutiva es: ", resultado)
 5. Se pide la entrada del usuario, y a la lista que se ingresa se divide y se devuelven carácteres enteros mediante la función *split*.
 6. Se imprime el reesultado.
 
-## PPunto cinco
+## Punto cinco
 
 **Instrucción**
 
@@ -162,8 +162,33 @@ Escribir una función que reciba una lista de cadenas y retorne únicamente aque
 
 **Código**
 ```
-abc
+def mismos_caracteres(cadena1, cadena2):
+    return sorted(cadena1) == sorted(cadena2)
+
+def cadenas_mismos_caracteres(lista):
+    resultados = []
+
+    for i in range(len(lista)):
+        for j in range(i+1, len(lista)):
+            if mismos_caracteres(lista[i], lista[j]):
+                resultados.append(lista[i])
+                resultados.append(lista[j])
+    return resultados
+
+entrada_usuario = input("Ingrese una lista de cadenas separada por espacio: ")
+cadenas_usuario = entrada_usuario.split()
+
+salida = cadenas_mismos_caracteres(cadenas_usuario)
+print(salida)
 ```
 **Explicación**
 
-1.
+1. Se define una primera función para verificar que las cadenas tengan los mismos carácteres.
+2. La función ordena las palabras para hacer la verificación.
+3. Se define una segunda función para inicializar una lista en donde se almacenaran las palabras que si tienen los mismos carácteres.
+4. Se itera sobre cada cadena para comprobar que si coincidan sus carácteres.
+5. Mediante un condicional, si las cadenas coinciden, se almacena la palabra en la función "resultados".
+6. Se pide la entrada del usuario.
+7. Las cadenas que ingresó el usurario son divididas mediante la función *split*.
+8. Se da un valor de salida.
+9. Se imprime la soución.
