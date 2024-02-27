@@ -39,7 +39,7 @@ if __name__ == "__main__":
 ```
 **Explicación**
 1. Se establecen las variables que se van a utilizar dentro de la función (num1, num2, operador).
-2. Mediante la estructura de condicional **if-elif-else** se determina que operación se va a realizar de acuerdo al operador que proporcione el usuario.
+2. Mediante la estructura de condicional **if-elif-else** se determina qué operación se va a realizar de acuerdo al operador que proporcione el usuario.
 3. En caso de tener una división con denominador de 0 se arrojará un error, debido a que dicha división no es permitida.
 4. En caso de no ingresar un operador válido (+, -, *, /) el programa arrojará que es un operador inválido y que deberá volverlo a intentar.
 5. Se realiza un llamado de la función principal.
@@ -96,3 +96,54 @@ Escribir una función que reciba una lista de números y devuelva solo aquellos 
 ```
 abc
 ```
+**Explicación**
+
+1. 
+
+## Punto cuatro
+
+**Instrucción**
+
+Escribir una función que reciba una lista de números enteros y devolver la mayor suma entre dos elementos consecutivos.
+
+**Código**
+```
+def mayor_suma_consecutiva(lista):
+    if len(lista) < 2:
+        return "La lista debe tener al menos dos elementos"
+    
+    mayor_suma = lista[0] + lista[1]
+
+    for i in range (1, len(lista)-1):
+        suma_consecutiva = lista[i] + lista[i + 1]
+        if suma_consecutiva > mayor_suma:
+            mayor_suma = suma_consecutiva
+    return mayor_suma
+
+numeros_usuario = input("Ingrese una lista de numeros separada por espacio: ")
+numeros = [int(num) for num in numeros_usuario.split()]
+
+resultado = mayor_suma_consecutiva(numeros)
+print("La mayor suma consecutiva es: ", resultado)
+```
+**Explicación**
+1. Se establece la longitud de la lista, si la lista tiene menos de 2 carácteres no es posible ejecutar el código.
+2. Se hace la primera suma entre los dos primeros elementos de la lista ([0], [1]).
+3. Se utiliza un bucle **for** para recorrer la lista y calcular la suma entre cada dos elementos consecutivos.
+4. Se hace la comparación entre las sumas ya realizadas para saber cual es la mayor cantidad.
+5. Se pide la entrada del usuario, y a la lista que se ingresa se divide y se devuelven carácteres enteros mediante la función *split*.
+6. Se imprime el reesultado.
+
+## Punto cinco
+
+**Instrucción**
+
+Escribir una función que reciba una lista de cadenas y retorne únicamente aquellos elementos que tengan los mismos caracteres.
+
+**Código**
+```
+abc
+```
+**Explicación**
+
+1.
