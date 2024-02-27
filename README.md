@@ -82,7 +82,7 @@ else:
 En esta ocasión para recorrer la palabra sin hacer slicing, la solución es recorrer la palabra desde ambos extremos al mismo tiempo.
 1. Se obtiene la longitud de la palabra.
 2. Se inician los indices al inicio y al final de la palabra respectivamente.
-3. Se utiliza el bucle **while** para asegurarnos que se está comparando carácteres opuestos hasta llegar a la mitad de la palabra.
+3. Se utiliza el bucle **"while"** para asegurarnos que se está comparando carácteres opuestos hasta llegar a la mitad de la palabra.
 4. Se verifica que los carácteres coincidan, y se hace la confirmación mediante un **True** o un **False** dependiendo si la palabra es palíndromo o no.
 5. Se imprime la solución.
 
@@ -129,7 +129,7 @@ print("La mayor suma consecutiva es: ", resultado)
 **Explicación**
 1. Se establece la longitud de la lista, si la lista tiene menos de 2 carácteres no es posible ejecutar el código.
 2. Se hace la primera suma entre los dos primeros elementos de la lista ([0], [1]).
-3. Se utiliza un bucle **for** para recorrer la lista y calcular la suma entre cada dos elementos consecutivos.
+3. Se utiliza un bucle **"for"** para recorrer la lista y calcular la suma entre cada dos elementos consecutivos.
 4. Se hace la comparación entre las sumas ya realizadas para saber cual es la mayor cantidad.
 5. Se pide la entrada del usuario, y a la lista que se ingresa se divide y se devuelven carácteres enteros mediante la función *split*.
 6. Se imprime el reesultado.
