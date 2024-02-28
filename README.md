@@ -26,15 +26,11 @@ def realizar_operacion(num1, num2, operador):
 
 
 if __name__ == "__main__":
-    #Para solicitar entrada del usuario.
     num1 = float(input("Ingrese el primer numero: "))
     operador = input("Ingrese la operacion (+, -, *, /): ")
     num2 = float(input("Ingrese el segundo número: "))
 
-    #Para realizar la operación.
     resultado = realizar_operacion(num1, num2, operador)
-
-    #Para imprimir el resultado.
     print("El resultado de", num1, operador, num2, "es:", resultado)
 ```
 **Explicación**
@@ -66,12 +62,9 @@ def palindromo(palabra):
         fin -= 1
     return True
 
-#Requerir entrada del usuario.
 palabra_usuario = input("Ingrese una palabra o una frase sin espacios en minúsculas: ")
-
 resultado = palindromo(palabra_usuario)
 
-#Definir si es palíndromo o no.
 if palindromo(palabra_usuario):
     print(palabra_usuario, "si es un palindromo.")
 else:
