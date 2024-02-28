@@ -191,4 +191,4 @@ print(salida)
 6. Se pide la entrada del usuario.
 7. Las cadenas que ingresó el usurario son divididas mediante la función *split*.
 8. Se da un valor de salida.
-9. Se imprime la soución.
+9. Se imprime la solución.
